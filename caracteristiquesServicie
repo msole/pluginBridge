@@ -1,0 +1,7 @@
+service.getCharacteristic(Characteristic.Brightness);
+
+service.setCharacteristic(Characteristic.Name, 'Light Bulb dels Collons');
+
+service.updateCharacteristic(Characteristic.Brightness, 60);
+
+service.updateCharacteristic(Characteristic.Brightness, new Error('A placeholder error object'));
