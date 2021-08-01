@@ -1,0 +1,7 @@
+//Api Storage
+
+class ExamplePlatformPlugin {
+  constructor(log, config, api) {
+    const storagePath = api.user.storagePath();
+  }
+}
