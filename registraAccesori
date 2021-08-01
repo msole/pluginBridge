@@ -1,6 +1,7 @@
 
   /**
-   * REQUIRED - This is the entry point to your plugin
+   * REQUIRED - això es el punt d'entrada al plugin, allò ké pot crear i canviá 
+   * al accessori i es pot manejar modificant stils multiples vegades
    */
   constructor(log, config, api) {
     this.log = log;
@@ -24,8 +25,10 @@
   }
 
   /**
-   * REQUIRED - This must return an array of the services you want to expose.
-   * This method must be named "getServices".
+   * REQUIRED - 
+   * É getservice, torna al array del servei que vols. Li ho tradueixo. Lol
+   * This must return an array of the services you want to expose.
+   * El metode ha de dirse, lo named "getServices".
    */
   getServices() {
     return [
