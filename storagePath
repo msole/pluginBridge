@@ -1,6 +1,6 @@
 //Api Storage
 
-class ExamplePlatformPlugin {
+class BigPlatformPlugin {
   constructor(log, config, api) {
     const storagePath = api.user.storagePath();
   }
