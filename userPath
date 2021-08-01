@@ -1,0 +1,7 @@
+//Api UserPath, returns the path to the json config file
+
+class ExamplePlatformPlugin {
+  constructor(log, config, api) {
+    const configPath = api.user.configPath();
+  }
+}
