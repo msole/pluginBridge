@@ -8,7 +8,7 @@
     this.config = config;
     this.api = api;
 
-    this.log.debug('Example Accessory Plugin Loaded');
+    this.log.debug('Big Accessory Plugin Loaded');
 
     // your accessory must have an AccessoryInformation service
     this.informationService = new this.api.hap.Service.AccessoryInformation()
