@@ -1,0 +1,35 @@
+switchService.getCharacteristic(this.api.hap.Characteristic.On)
+  .onSet(async (value) => {
+    console.log('new value', value);
+  });
+  
+  switchService.getCharacteristic(this.api.hap.Characteristic.On)
+  .onGet(async () => {
+    const isLightOn: boolean = true;
+    return isLightOn;
+  });
+  
+  switchService.getCharacteristic(this.api.hap.Characteristic.On)
+  .updateValue(60);
+  
+  switchService.getCharacteristic(this.api.hap.Characteristic.On)
+  .setValue(60);
+  
+  switchService.getCharacteristic(this.api.hap.Characteristic.On)
+  .on('set', (value, callback) => {
+    callback(null);
+  });
+  
+  switchService.getCharacteristic(this.api.hap.Characteristic.On)
+  .on('get', (callback) => {
+    const value = true;
+    callback(null, value);
+  });
+  
+  accessory.getService(Service.Thermostat)
+  .getCharacteristic(Characteristic.TargetTemperature)
+  .setProps({
+    minValue: 18,
+    maxValue: 30,
+    minStep: 1
+  });
